@@ -12,15 +12,12 @@ class MessageScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      title: 'Flutter Demo',
-      home: Scaffold(
-        appBar: AppBar(
-          title: Text(title),
-        ),
-        body: Center(
-          child: Text(message),
-        ),
+    return Scaffold(
+      appBar: AppBar(
+        title: Text(title),
+      ),
+      body: Center(
+        child: Text(message),
       ),
     );
   }

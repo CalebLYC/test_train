@@ -5,8 +5,10 @@ import 'package:test_train/views/screens/items_screen.dart';
 void main() {
   testWidgets('find an item in a deep list', (widgetTester) async {
     await widgetTester.pumpWidget(
-      ItemsScreen(
-        items: List<String>.generate(10000, (i) => 'Item $i'),
+      MaterialApp(
+        home: ItemsScreen(
+          items: List<String>.generate(10000, (i) => 'Item $i'),
+        ),
       ),
     );
 
